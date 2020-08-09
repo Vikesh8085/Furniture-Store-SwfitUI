@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        TabBarView()
     }
 }
 
@@ -19,3 +19,27 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+struct TabBarView: View {
+    @State var mode = 0
+    
+    var body: some View {
+        
+        VStack{
+            HStack{
+                //
+                Button(action: {
+                    
+                }) {
+                    Image("home")
+                        .foregroundColor(self.mode == 0 ? .white : .primary)
+                    if self.mode == 0 {
+                        
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
